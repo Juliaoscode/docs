@@ -1,0 +1,99 @@
+/* Hide search in navbar */
+.navbar .search-container, .navbar .search-input, .navbar .search {
+  display: none !important;
+}
+
+/* Force display in sidebar */
+.sidebar .search-container, .sidebar .search-input, .sidebar .search {
+  display: block !important;
+  margin-bottom: 1rem; /* spacing */
+}
+
+/* Adjust width / styling */
+.sidebar .search-input {
+  width: 100%; /* or whatever fits sidebar */
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* Hide/minimize top navigation bar */
+.mintlify-topbar {
+  height: 0px !important;
+  padding: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Adjust main content area to account for no top bar */
+.mintlify-main {
+  padding-top: 0 !important;
+}
+
+/* Enhanced sidebar styling */
+.mintlify-sidebar {
+  width: 280px !important;
+  padding: 20px 0 !important;
+  border-right: 1px solid var(--border-color);
+}
+
+/* Logo positioning in sidebar */
+.mintlify-sidebar .mintlify-logo {
+  padding: 20px 24px !important;
+  margin-bottom: 20px !important;
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Search in sidebar */
+.mintlify-search {
+  margin: 0 20px 20px 20px !important;
+  width: calc(100% - 40px) !important;
+}
+
+/* Navigation styling */
+.mintlify-sidebar-nav {
+  padding: 0 20px !important;
+}
+
+/* Group headers */
+.mintlify-sidebar-group-title {
+  font-weight: 600 !important;
+  color: var(--text-primary) !important;
+  margin: 20px 0 10px 0 !important;
+  font-size: 14px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+}
+
+/* Navigation links */
+.mintlify-sidebar-link {
+  padding: 8px 16px !important;
+  margin: 2px 0 !important;
+  border-radius: 6px !important;
+  transition: all 0.2s ease !important;
+}
+
+#mintlify-sidebar-link:hover {
+  background-color: white !important;
+}
+
+.mintlify-sidebar-link.active {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+  font-weight: 500 !important;
+}
+
+
+/* Color variables */
+:root {
+  --border-color: #e2e8f0;
+  --hover-color: #f8fafc;
+  --text-primary: #1a202c;
+  --primary-color: #0D9373;
+}
+
+[data-theme="dark"] {
+  --border-color: #2d3748;
+  --hover-color: #2d3748;
+  --text-primary: #f7fafc;
+}
