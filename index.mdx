@@ -5,9 +5,8 @@ description: "Welcome to the new home for your documentation"
 
 <div style={{
   position: 'relative',
-  minHeight: '500px',
-  overflow: 'hidden',
-  marginBottom: '3rem'
+  minHeight: '100vh',
+  overflow: 'hidden'
 }}>
   <video
     autoPlay
@@ -15,7 +14,7 @@ description: "Welcome to the new home for your documentation"
     muted
     playsInline
     style={{
-      position: 'absolute',
+      position: 'fixed',
       top: '50%',
       left: '50%',
       minWidth: '100%',
@@ -31,118 +30,153 @@ description: "Welcome to the new home for your documentation"
   <div style={{
     position: 'relative',
     zIndex: 1,
-    padding: '4rem 2rem',
-    textAlign: 'center',
-    backgroundColor: 'rgba(0, 0, 0, 0.4)',
-    color: 'white'
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    minHeight: '100vh',
+    padding: '2rem'
   }}>
-    <h1 style={{
-      fontSize: '3rem',
-      fontWeight: 'bold',
-      marginBottom: '1rem',
-      textShadow: '2px 2px 4px rgba(0, 0, 0, 0.7)'
+    <div style={{
+      maxWidth: '1200px',
+      margin: '0 auto',
+      padding: '2rem 0'
     }}>
-      Welcome to Your Documentation
-    </h1>
-    <p style={{
-      fontSize: '1.25rem',
-      marginBottom: '2rem',
-      textShadow: '1px 1px 2px rgba(0, 0, 0, 0.7)'
-    }}>
-      Build amazing documentation with powerful features
-    </p>
+      <div style={{
+        textAlign: 'center',
+        marginBottom: '4rem',
+        color: 'white'
+      }}>
+        <h1 style={{
+          fontSize: '3rem',
+          fontWeight: 'bold',
+          marginBottom: '1rem',
+          textShadow: '2px 2px 4px rgba(0, 0, 0, 0.7)'
+        }}>
+          Welcome to Your Documentation
+        </h1>
+        <p style={{
+          fontSize: '1.25rem',
+          marginBottom: '2rem',
+          textShadow: '1px 1px 2px rgba(0, 0, 0, 0.7)'
+        }}>
+          Build amazing documentation with powerful features
+        </p>
+      </div>
+
+      <div style={{
+        backgroundColor: 'rgba(255, 255, 255, 0.95)',
+        borderRadius: '12px',
+        padding: '2rem',
+        marginBottom: '2rem'
+      }}>
+        <h2>Setting up</h2>
+        <p>Get your documentation site up and running in minutes.</p>
+        
+        <Card
+          title="Start here"
+          icon="rocket"
+          href="/quickstart"
+          horizontal
+        >
+          Follow our three step quickstart guide.
+        </Card>
+      </div>
+
+      <div style={{
+        backgroundColor: 'rgba(255, 255, 255, 0.95)',
+        borderRadius: '12px',
+        padding: '2rem',
+        marginBottom: '2rem'
+      }}>
+        <h2>Make it yours</h2>
+        <p>Design a docs site that looks great and empowers your users.</p>
+        
+        <Columns cols={2}>
+          <Card
+            title="Edit locally"
+            icon="pen-to-square"
+            href="/development"
+          >
+            Edit your docs locally and preview them in real time.
+          </Card>
+          <Card
+            title="Customize your site"
+            icon="palette"
+            href="/essentials/settings"
+          >
+            Customize the design and colors of your site to match your brand.
+          </Card>
+          <Card
+            title="Set up navigation"
+            icon="map"
+            href="/essentials/navigation"
+          >
+            Organize your docs to help users find what they need and succeed with your product.
+          </Card>
+          <Card
+            title="API documentation"
+            icon="terminal"
+            href="/api-reference/introduction"
+          >
+            Auto-generate API documentation from OpenAPI specifications.
+          </Card>
+        </Columns>
+      </div>
+
+      <div style={{
+        backgroundColor: 'rgba(255, 255, 255, 0.95)',
+        borderRadius: '12px',
+        padding: '2rem',
+        marginBottom: '2rem'
+      }}>
+        <h2>Create beautiful pages</h2>
+        <p>Everything you need to create world-class documentation.</p>
+        
+        <Columns cols={2}>
+          <Card
+            title="Write with MDX"
+            icon="pen-fancy"
+            href="/essentials/markdown"
+          >
+            Use MDX to style your docs pages.
+          </Card>
+          <Card
+            title="Code samples"
+            icon="code"
+            href="/essentials/code"
+          >
+            Add sample code to demonstrate how to use your product.
+          </Card>
+          <Card
+            title="Images"
+            icon="image"
+            href="/essentials/images"
+          >
+            Display images and other media.
+          </Card>
+          <Card
+            title="Reusable snippets"
+            icon="recycle"
+            href="/essentials/reusable-snippets"
+          >
+            Write once and reuse across your docs.
+          </Card>
+        </Columns>
+      </div>
+
+      <div style={{
+        backgroundColor: 'rgba(255, 255, 255, 0.95)',
+        borderRadius: '12px',
+        padding: '2rem'
+      }}>
+        <h2>Need inspiration?</h2>
+        
+        <Card
+          title="See complete examples"
+          icon="stars"
+          href="https://mintlify.com/customers"
+        >
+          Browse our showcase of exceptional documentation sites.
+        </Card>
+      </div>
+    </div>
   </div>
 </div>
-
-## Setting up
-
-Get your documentation site up and running in minutes.
-
-<Card
-  title="Start here"
-  icon="rocket"
-  href="/quickstart"
-  horizontal
->
-  Follow our three step quickstart guide.
-</Card>
-
-## Make it yours
-
-Design a docs site that looks great and empowers your users.
-
-<Columns cols={2}>
-  <Card
-    title="Edit locally"
-    icon="pen-to-square"
-    href="/development"
-  >
-    Edit your docs locally and preview them in real time.
-  </Card>
-  <Card
-    title="Customize your site"
-    icon="palette"
-    href="/essentials/settings"
-  >
-    Customize the design and colors of your site to match your brand.
-  </Card>
-    <Card
-    title="Set up navigation"
-    icon="map"
-    href="/essentials/navigation"
-  >
-    Organize your docs to help users find what they need and succeed with your product.
-  </Card>
-  <Card
-    title="API documentation"
-    icon="terminal"
-    href="/api-reference/introduction"
-  >
-    Auto-generate API documentation from OpenAPI specifications.
-  </Card>
-</Columns>
-
-## Create beautiful pages
-
-Everything you need to create world-class documentation.
-
-<Columns cols={2}>
-  <Card
-    title="Write with MDX"
-    icon="pen-fancy"
-    href="/essentials/markdown"
-  >
-    Use MDX to style your docs pages.
-  </Card>
-  <Card
-    title="Code samples"
-    icon="code"
-    href="/essentials/code"
-  >
-    Add sample code to demonstrate how to use your product.
-  </Card>
-  <Card
-    title="Images"
-    icon="image"
-    href="/essentials/images"
-  >
-    Display images and other media.
-  </Card>
-  <Card
-    title="Reusable snippets"
-    icon="recycle"
-    href="/essentials/reusable-snippets"
-  >
-    Write once and reuse across your docs.
-  </Card>
-</Columns>
-
-## Need inspiration?
-
-<Card
-  title="See complete examples"
-  icon="stars"
-  href="https://mintlify.com/customers"
->
-  Browse our showcase of exceptional documentation sites.
-</Card>
