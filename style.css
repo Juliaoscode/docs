@@ -128,26 +128,40 @@ video[src*="swpvideo"] {
 
 /* Card styling on video background */
 .mintlify-content[data-page-title="Introduction"] .card {
-  background: rgba(255, 255, 255, 0.98) !important;
+  background: rgba(0, 0, 0, 0.5) !important;
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   transition: all 0.3s ease;
 }
 
 .mintlify-content[data-page-title="Introduction"] .card:hover {
-  background: rgba(255, 255, 255, 1) !important;
+  background: rgba(0, 0, 0, 0.7) !important;
   transform: translateY(-2px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
 /* Dark mode adjustments for video background */
 [data-theme="dark"] .mintlify-content[data-page-title="Introduction"] .card {
-  background: rgba(30, 30, 30, 0.95) !important;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.6) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 [data-theme="dark"] .mintlify-content[data-page-title="Introduction"] .card:hover {
-  background: rgba(30, 30, 30, 0.98) !important;
+  background: rgba(0, 0, 0, 0.8) !important;
+}
+
+/* Card text styling for better visibility */
+.mintlify-content[data-page-title="Introduction"] .card * {
+  color: white !important;
+}
+
+.mintlify-content[data-page-title="Introduction"] .card h3 {
+  color: white !important;
+}
+
+.mintlify-content[data-page-title="Introduction"] .card p,
+.mintlify-content[data-page-title="Introduction"] .card div {
+  color: rgba(255, 255, 255, 0.9) !important;
 }
 
 /* Responsive adjustments */
