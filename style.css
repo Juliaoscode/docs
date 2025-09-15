@@ -90,12 +90,16 @@
   --hover-color: #f8fafc;
   --text-primary: #1a202c;
   --primary-color: #0D9373;
+  --background-color: #ffffff;
+  --navbar-background: #ffffff;
 }
 
 [data-theme="dark"] {
   --border-color: #2d3748;
   --hover-color: #2d3748;
   --text-primary: #f7fafc;
+  --background-color: #0f0f0f;
+  --navbar-background: #0f0f0f;
 }
 
 /* Video background styles for intro page */
@@ -155,4 +159,27 @@ video[src*="swpvideo"] {
   .mintlify-content[data-page-title="Introduction"] p {
     font-size: 1rem !important;
   }
+}
+
+/* Make navigation bar non-transparent */
+.mintlify-nav {
+  background-color: var(--background-color) !important;
+  backdrop-filter: none !important;
+  opacity: 1 !important;
+}
+
+/* Ensure navbar has solid background */
+nav, .navbar, [class*="navbar"], [class*="nav-bar"], [class*="navigation"] {
+  background-color: var(--background-color) !important;
+  backdrop-filter: none !important;
+  opacity: 1 !important;
+}
+
+
+/* Additional specificity for Mintlify navigation */
+.mintlify-header, .mintlify-topbar, .mintlify-navbar {
+  background-color: var(--navbar-background) !important;
+  backdrop-filter: none !important;
+  opacity: 1 !important;
+  background: var(--navbar-background) !important;
 }
