@@ -183,3 +183,74 @@ nav, .navbar, [class*="navbar"], [class*="nav-bar"], [class*="navigation"] {
   opacity: 1 !important;
   background: var(--navbar-background) !important;
 }
+
+/* Heaven-style card layout for intro page */
+.mintlify-content[data-page-title="Introduction"] .card {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 16px !important;
+  padding: 2.5rem !important;
+  text-align: left !important;
+  transition: all 0.3s ease !important;
+  backdrop-filter: blur(10px) !important;
+  min-height: 200px !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.mintlify-content[data-page-title="Introduction"] .card:hover {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Card icon styling */
+.mintlify-content[data-page-title="Introduction"] .card svg {
+  font-size: 2rem !important;
+  margin-bottom: 1rem !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Card title styling */
+.mintlify-content[data-page-title="Introduction"] .card h3 {
+  color: white !important;
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+}
+
+/* Card description styling */
+.mintlify-content[data-page-title="Introduction"] .card p {
+  color: rgba(255, 255, 255, 0.7) !important;
+  font-size: 1rem !important;
+  line-height: 1.6 !important;
+}
+
+/* Dark mode adjustments for Heaven-style */
+[data-theme="dark"] .mintlify-content[data-page-title="Introduction"] .card {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+[data-theme="dark"] .mintlify-content[data-page-title="Introduction"] .card:hover {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Grid layout for cards */
+.mintlify-content[data-page-title="Introduction"] .columns {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 1.5rem !important;
+  max-width: 900px !important;
+  margin: 0 auto !important;
+}
+
+/* Responsive grid */
+@media (max-width: 768px) {
+  .mintlify-content[data-page-title="Introduction"] .columns {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+}
