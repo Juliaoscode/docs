@@ -3,7 +3,56 @@ title: "Introduction"
 description: "Welcome to the new home for your documentation"
 ---
 
-<Snippet file="video-background.mdx" />
+<div style={{
+  position: 'relative',
+  minHeight: '500px',
+  overflow: 'hidden',
+  marginBottom: '3rem'
+}}>
+  <video
+    autoPlay
+    loop
+    muted
+    playsInline
+    style={{
+      position: 'absolute',
+      top: '50%',
+      left: '50%',
+      minWidth: '100%',
+      minHeight: '100%',
+      width: 'auto',
+      height: 'auto',
+      transform: 'translate(-50%, -50%)',
+      objectFit: 'cover',
+      zIndex: -1
+    }}
+    src="/videos/swpvideo.mp4"
+  />
+  <div style={{
+    position: 'relative',
+    zIndex: 1,
+    padding: '4rem 2rem',
+    textAlign: 'center',
+    backgroundColor: 'rgba(0, 0, 0, 0.4)',
+    color: 'white'
+  }}>
+    <h1 style={{
+      fontSize: '3rem',
+      fontWeight: 'bold',
+      marginBottom: '1rem',
+      textShadow: '2px 2px 4px rgba(0, 0, 0, 0.7)'
+    }}>
+      Welcome to Your Documentation
+    </h1>
+    <p style={{
+      fontSize: '1.25rem',
+      marginBottom: '2rem',
+      textShadow: '1px 1px 2px rgba(0, 0, 0, 0.7)'
+    }}>
+      Build amazing documentation with powerful features
+    </p>
+  </div>
+</div>
 
 ## Setting up
 

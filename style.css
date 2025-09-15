@@ -17,18 +17,18 @@
   border: 1px solid #ccc;
 }
 
-/* Top navigation bar - commented out old hiding styles */
-/* .mintlify-topbar {
+/* Hide/minimize top navigation bar */
+.mintlify-topbar {
   height: 0px !important;
   padding: 0 !important;
   border: none !important;
   box-shadow: none !important;
-} */
+}
 
-/* Main content area - commented out old padding */
-/* .mintlify-main {
+/* Adjust main content area to account for no top bar */
+.mintlify-main {
   padding-top: 0 !important;
-} */
+}
 
 /* Enhanced sidebar styling */
 .mintlify-sidebar {
@@ -98,19 +98,16 @@
   --text-primary: #f7fafc;
 }
 
-/* Video Background Styles */
-.video-background-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+/* Video background styles */
+.video-hero-container {
+  position: relative;
+  min-height: 500px;
   overflow: hidden;
-  pointer-events: none;
+  margin-bottom: 3rem;
+  border-radius: 12px;
 }
 
-.video-background {
+.video-hero-background {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -120,70 +117,39 @@
   height: auto;
   transform: translate(-50%, -50%);
   object-fit: cover;
+  z-index: -1;
 }
 
-/* Black Navigation Bar */
-.mintlify-topbar {
-  background-color: #000000 !important;
-  color: #ffffff !important;
-  height: auto !important;
-  padding: 1rem 2rem !important;
-  border-bottom: 1px solid #333 !important;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.5) !important;
-}
-
-.mintlify-topbar * {
-  color: #ffffff !important;
-}
-
-/* Ensure sidebar has solid background */
-.mintlify-sidebar {
-  background-color: #ffffff !important;
-  width: 280px !important;
-  padding: 20px 0 !important;
-  border-right: 1px solid var(--border-color);
-}
-
-[data-theme="dark"] .mintlify-sidebar {
-  background-color: #1a202c !important;
-}
-
-/* Main content area with semi-transparent background */
-.mintlify-main {
-  background-color: rgba(255, 255, 255, 0.85) !important;
-  padding-top: 60px !important; /* Adjust for navbar height */
-  min-height: 100vh;
-  position: relative;
-}
-
-[data-theme="dark"] .mintlify-main {
-  background-color: rgba(26, 32, 44, 0.85) !important;
-}
-
-/* Ensure proper layering */
-.mintlify-main > * {
+.video-hero-content {
   position: relative;
   z-index: 1;
+  padding: 4rem 2rem;
+  text-align: center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+  color: white;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Content wrapper to ensure readability */
-.mintlify-content {
-  background-color: rgba(255, 255, 255, 0.95) !important;
-  padding: 2rem !important;
-  border-radius: 8px !important;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
-}
-
-[data-theme="dark"] .mintlify-content {
-  background-color: rgba(26, 32, 44, 0.95) !important;
-}
-
-/* Ensure body has no background */
-body {
-  background: transparent !important;
-}
-
-/* Fix for Mintlify's default backgrounds */
-.mintlify-app {
-  background: transparent !important;
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .video-hero-container {
+    min-height: 400px;
+  }
+  
+  .video-hero-content {
+    padding: 3rem 1.5rem;
+    min-height: 400px;
+  }
+  
+  .video-hero-content h1 {
+    font-size: 2rem !important;
+  }
+  
+  .video-hero-content p {
+    font-size: 1rem !important;
+  }
 }
