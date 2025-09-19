@@ -59,8 +59,8 @@
     }
   },
   "logo": {
-    "light": "/logo/dark.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/swptitle.png",
+    "dark": "/logo/swptitle.png"
   },
   "navbar": {
     "links": [
