@@ -110,6 +110,23 @@
   width: 100% !important;
 }
 
+/* Remove top padding from main container on intro page */
+.mintlify-main {
+  padding-top: 0 !important;
+}
+
+/* Ensure the page wrapper has no top margin/padding on intro */
+[data-page-title="Introduction"] {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Remove any top spacing from the article container */
+.mintlify-content[data-page-title="Introduction"] > article {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
 /* Ensure video stays fixed when scrolling */
 video[src*="swpvideo"] {
   position: fixed !important;
