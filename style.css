@@ -325,6 +325,27 @@ nav a:hover {
                0 0 20px rgba(255, 255, 255, 0.5) !important;
 }
 
+/* Hide any remaining feedback/question bars */
+[class*="feedback"],
+[class*="question-bar"],
+[class*="ask-question"],
+[class*="contextual"],
+[class*="floating-bar"],
+[class*="help-widget"],
+[class*="chat-widget"],
+.mintlify-feedback,
+.mintlify-contextual,
+.mintlify-ask,
+.mintlify-chat,
+.mintlify-help,
+div[data-radix-popper-content-wrapper],
+div[role="dialog"][data-state="open"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
 /* Heaven-style card layout for intro page */
 .mintlify-content[data-page-title="Introduction"] .card {
   background: rgba(255, 255, 255, 0.05) !important;
