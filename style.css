@@ -67,11 +67,12 @@
 /* Group headers */
 .mintlify-sidebar-group-title {
   font-weight: 600 !important;
-  color: var(--text-primary) !important;
+  color: rgba(255, 255, 255, 0.9) !important;
   margin: 20px 0 10px 0 !important;
   font-size: 14px !important;
   text-transform: uppercase !important;
   letter-spacing: 0.5px !important;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.3) !important;
 }
 
 /* Navigation links */
@@ -79,17 +80,26 @@
   padding: 8px 16px !important;
   margin: 2px 0 !important;
   border-radius: 6px !important;
-  transition: all 0.2s ease !important;
+  transition: all 0.3s ease !important;
+  color: rgba(255, 255, 255, 0.7) !important;
+  position: relative !important;
 }
 
-#mintlify-sidebar-link:hover {
-  background-color: white !important;
+/* Enhanced hover effect with glow */
+.mintlify-sidebar-link:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: white !important;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+               0 0 20px rgba(255, 255, 255, 0.6),
+               0 0 30px rgba(255, 255, 255, 0.4) !important;
+  transform: translateX(5px) !important;
 }
 
 .mintlify-sidebar-link.active {
   background-color: var(--primary-color) !important;
   color: white !important;
   font-weight: 500 !important;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.6) !important;
 }
 
 
@@ -108,7 +118,7 @@
   --hover-color: #2d3748;
   --text-primary: #f7fafc;
   --background-color: #0f0f0f;
-  --navbar-background: #1a1a1a;
+  --navbar-background: #0f0f0f;
 }
 
 /* Video background styles for intro page */
@@ -276,72 +286,43 @@ video[src*="swpvideo"] {
 
 /* Make navigation bar non-transparent */
 .mintlify-nav {
-  background-color: #1a1a1a !important;
+  background-color: var(--background-color) !important;
   backdrop-filter: none !important;
   opacity: 1 !important;
-  background: #1a1a1a !important;
 }
 
 /* Ensure navbar has solid background */
 nav, .navbar, [class*="navbar"], [class*="nav-bar"], [class*="navigation"] {
-  background-color: #1a1a1a !important;
+  background-color: var(--background-color) !important;
   backdrop-filter: none !important;
   opacity: 1 !important;
-  background: #1a1a1a !important;
 }
 
 
 /* Additional specificity for Mintlify navigation */
 .mintlify-header, .mintlify-topbar, .mintlify-navbar {
-  background-color: #1a1a1a !important;
+  background-color: var(--navbar-background) !important;
   backdrop-filter: none !important;
   opacity: 1 !important;
-  background: #1a1a1a !important;
+  background: var(--navbar-background) !important;
 }
 
-/* Force solid background on all possible navbar elements */
-[class*="header"], [class*="topbar"], header {
-  background-color: #1a1a1a !important;
-  background: #1a1a1a !important;
-  opacity: 1 !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
+/* Enhanced navbar text visibility */
+.mintlify-nav a, 
+.mintlify-navbar a,
+.mintlify-header a,
+nav a {
+  color: rgba(255, 255, 255, 0.8) !important;
+  transition: all 0.3s ease !important;
 }
 
-/* Target Mintlify's main navigation bar specifically */
-.sticky, [class*="sticky"], .fixed, [class*="fixed"] {
-  background-color: #1a1a1a !important;
-  background: #1a1a1a !important;
-  opacity: 1 !important;
-}
-
-/* Additional targeting for Mintlify navbar container */
-div[class*="bg-background"], div[class*="backdrop"], nav[class*="bg-background"] {
-  background-color: #1a1a1a !important;
-  background: #1a1a1a !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
-  opacity: 1 !important;
-}
-
-/* Target the main header wrapper */
-body > div:first-child > div:first-child {
-  background-color: #1a1a1a !important;
-  background: #1a1a1a !important;
-}
-
-/* Target all elements that might be the navbar */
-[role="navigation"], [role="banner"], .navigation-bar, .nav-container {
-  background-color: #1a1a1a !important;
-  background: #1a1a1a !important;
-  opacity: 1 !important;
-}
-
-/* Force background on elements with transparent/blur backgrounds */
-[style*="backdrop-filter"], [style*="background-color: transparent"], [style*="background: transparent"] {
-  background-color: #1a1a1a !important;
-  background: #1a1a1a !important;
-  backdrop-filter: none !important;
+.mintlify-nav a:hover,
+.mintlify-navbar a:hover,
+.mintlify-header a:hover,
+nav a:hover {
+  color: white !important;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+               0 0 20px rgba(255, 255, 255, 0.5) !important;
 }
 
 /* Heaven-style card layout for intro page */
