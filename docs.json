@@ -7,7 +7,7 @@
     "light": "#07C983",
     "dark": "#15803D"
   },
-  "favicon": "/favicon.png",
+  "favicon": "/swptitle.png",
   "appearance": {
     "default": "dark",
     "strict": true
@@ -17,9 +17,10 @@
       {
         "group": "Getting started",
         "pages": [
-          "index",
-          "quickstart",
-          "development"
+          "What is Swarmpad?",
+          "How to start?",
+          "What is ULTRA Flywheel?",
+          "Explore Swarmpad"
         ]
       },
       {
