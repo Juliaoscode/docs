@@ -17,15 +17,18 @@
       {
         "group": "Getting started",
         "pages": [
-          "index",
-          "quickstart",
-          "development"
+          "What is Swarmpad?",
+          "How to start?",
+          "What is ULTRA Flywheel?",
+          "Explore Swarmpad"
         ]
       },
       {
         "group": "APIs",
         "pages": [
-          "api-reference/introduction"
+          "api-reference/introduction",
+          "api-reference/developers",
+          "api-reference/ultraflywheel"
         ]
       }
     ],
