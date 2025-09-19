@@ -192,6 +192,36 @@ video[src*="swpvideo"] {
   color: rgba(255, 255, 255, 0.9) !important;
 }
 
+/* Hide page title, breadcrumbs and description on intro page */
+.mintlify-content[data-page-title="Introduction"] .mintlify-header {
+  display: none !important;
+}
+
+.mintlify-content[data-page-title="Introduction"] .mintlify-breadcrumb {
+  display: none !important;
+}
+
+.mintlify-content[data-page-title="Introduction"] .mintlify-page-header {
+  display: none !important;
+}
+
+.mintlify-content[data-page-title="Introduction"] .page-header {
+  display: none !important;
+}
+
+.mintlify-content[data-page-title="Introduction"] h1:first-of-type {
+  display: none !important;
+}
+
+.mintlify-content[data-page-title="Introduction"] .description {
+  display: none !important;
+}
+
+/* Hide eyebrow navigation on intro page */
+.mintlify-content[data-page-title="Introduction"] .mintlify-eyebrow {
+  display: none !important;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .mintlify-content[data-page-title="Introduction"] h1 {
