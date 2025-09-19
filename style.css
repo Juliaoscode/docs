@@ -222,10 +222,38 @@ video[src*="swpvideo"] {
   display: none !important;
 }
 
+/* Rough text animation for SWARMPAD title */
+@keyframes roughGlitch {
+  0%, 100% {
+    transform: skew(-5deg, -2deg) translateX(0);
+    filter: brightness(1);
+  }
+  20% {
+    transform: skew(-5deg, -2deg) translateX(-2px);
+    filter: brightness(1.1);
+  }
+  40% {
+    transform: skew(-5deg, -2deg) translateX(2px);
+    filter: brightness(0.9);
+  }
+  60% {
+    transform: skew(-5deg, -2deg) translateX(-1px);
+    filter: brightness(1.05);
+  }
+  80% {
+    transform: skew(-5deg, -2deg) translateX(1px);
+    filter: brightness(0.95);
+  }
+}
+
+.mintlify-content[data-page-title="Introduction"] h1 {
+  animation: roughGlitch 3s ease-in-out infinite;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .mintlify-content[data-page-title="Introduction"] h1 {
-    font-size: 2rem !important;
+    font-size: 3rem !important;
   }
   
   .mintlify-content[data-page-title="Introduction"] p {
