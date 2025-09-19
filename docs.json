@@ -43,6 +43,13 @@
   "navbar": {
     "links": []
   },
+  "feedback": {
+    "enabled": false,
+    "style": "none"
+  },
+  "assistant": {
+    "enabled": false
+  },
   "footer": {
     "socials": {
       "x": "https://x.com/mintlify",
