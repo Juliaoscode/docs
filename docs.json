@@ -7,7 +7,7 @@
     "light": "#07C983",
     "dark": "#15803D"
   },
-  "favicon": "/swptitle.png",
+  "favicon": "/logo/swptitle.png",
   "appearance": {
     "default": "dark",
     "strict": true
@@ -17,25 +17,15 @@
       {
         "group": "Getting started",
         "pages": [
-          "What is Swarmpad?",
-          "How to start?",
-          "What is ULTRA Flywheel?",
-          "Explore Swarmpad"
+          "index",
+          "quickstart",
+          "development"
         ]
       },
       {
-        "group": "API documentation",
+        "group": "APIs",
         "pages": [
           "api-reference/introduction"
-        ]
-      },
-      {
-        "group": "Endpoint examples",
-        "pages": [
-          "api-reference/endpoint/get",
-          "api-reference/endpoint/create",
-          "api-reference/endpoint/delete",
-          "api-reference/endpoint/webhook"
         ]
       }
     ],
@@ -64,8 +54,7 @@
     "dark": "/logo/swptitle.png"
   },
   "navbar": {
-    "links": [],
-    "primary": null
+    "links": []
   },
   "contextual": {
     "options": [
